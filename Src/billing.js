@@ -10,5 +10,9 @@
     */
 
     // This is the percentage that determines the transaction charge
+    var myconstant = 0.025; //line 4
+    var amountTendered = 100000; //line5
+    console.log('This is what the billed amount is (less transaction charges)'); //line6
+    
        
 
