@@ -22,3 +22,14 @@ by initializeing a variable j to 2, increment it by 1 and set it limit to i-1
 if any number from the above loop divides the number from the mother then the number is prime
 __________________________________________________________________________
 */
+
+var n = 10;
+for(var i =2; i<=n; i++)
+{
+	var iam_prime = true;
+	for (var j =2; j<= i-1; j++)
+	{
+		if(i%j==0) iam_prime = false;
+	}
+	if(iam_prime=true) console.log(i);
+}
