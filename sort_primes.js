@@ -1,33 +1,19 @@
-Using your prime checker code,
-
-> Create a function which returns an array of prime numbers between 0 and 100.
-
-> create a file called shuffler.js with the following code.
-> Import that shuffle.js and use its shuffle function to 
-shuffle up the elements of the array. (You are advised to add code that will help you make the file ready for importing into other files, Google is your friend.)
-
-> At this point, If you print your array out, it should have disorganized prime numbers.
-
-> Write a function to arrange your array of numbers in ascending order, without using javascript sort functions.
-
-
-Submit your work as sort_primes.js. For this time, the pair will have the same code.
-
-
 // Pseudo code
 
+// Import the shuffler.js file after creating it
 // Reffer to the prime checker function in the previous exercises but instead put the results in an array
+// Sort the array in ascending order
 
 
 const disorganize = require('./shuffler.js'); //import statemnet
 
 
-var arr = [];
+var arr = []; //Initialize the array to empty
 
 //when calling the prime_number_calculator function initialise the paramater to  100
 
-prime_number_calculator = n => {
-  for (var i =2; i<=n; i++)
+prime_number_calculator = () => {
+  for (var i =2; i<=100; i++)
   {
     var are_you_prime = true;
 
