@@ -12,3 +12,13 @@ P.S. The code should work for any n, not be hard-tuned for any fixed value.
 
 
 
+//Pseudo code
+/*
+__________________________________________________________________________
+Initialise avariable n that will hold the value
+Create a loop initialise (i) it to the first prime number 2 increment by 1 and end at the number n
+For each number in the above loop test if it is prime by creating another for loop
+by initializeing a variable j to 2, increment it by 1 and set it limit to i-1
+if any number from the above loop divides the number from the mother then the number is prime
+__________________________________________________________________________
+*/
