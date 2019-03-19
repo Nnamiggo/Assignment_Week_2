@@ -8,7 +8,10 @@ ______________________________________________________________________________
 ______________________________________________________________________________
 */
 
-var myNumber = -10;
-if(myNumber>0) {console.log(1);}//line 5
-else if(myNumber<0){console.log(-1);} //line 6
-else {console.log(0);}
+var myNumber = 7; //line 4
+
+if (myNumber>0) console.log(1); //line 5
+
+else if (myNumber<0) console.log(-1); //line 6
+
+else console.log(0); //line 7
