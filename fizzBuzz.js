@@ -10,10 +10,10 @@
  5. Else print i
  ________________________________________________________________________
  */
- for (var i=1; i<=100; i++)
+ for (var i=1; i<=100; i++) //Implementing instruction 1
  {
-    if(i%3===0 && i%5===0) console.log("FizzBuzz");
-    else if (i%3===0) console.log("Fizz");
-    else if (i%5===0) console.log("Buzz")
-
+    if(i%3===0 && i%5===0) console.log("FizzBuzz"); //Implementing instruction 2
+    else if (i%3===0) console.log("Fizz"); //Implementing instruction 3
+    else if (i%5===0) console.log("Buzz");  //Implementing instruction 4
+    else console.log(i); //Implementing instruction 5
  }
