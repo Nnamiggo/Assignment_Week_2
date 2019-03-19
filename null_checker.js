@@ -10,3 +10,12 @@ In this task we assume that the input is always a number.
 
 
 Save the file as null_checker in the same folder that you saved yesterday's work.
+//Pseudo code
+/*
+______________________________________________________________________________
+-Initialise the number to any that you want..........as instructed by instructor
+-print 1, if the number is greater than zero,
+-print -1, if the number is less than zero,
+-print 0, if the numberequals zero.
+______________________________________________________________________________
+*/
