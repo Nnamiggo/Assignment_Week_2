@@ -8,7 +8,7 @@ ______________________________________________________________________________
 ______________________________________________________________________________
 */
 
-var myNumber = 7;
-if(myNumber>0) {console.less(1);}//line 5
-if(myNumber<0){console.log(-1);} //line 6
-if(myNumber=0){console.og(0);}
+var myNumber = -10;
+if(myNumber>0) {console.log(1);}//line 5
+else if(myNumber<0){console.log(-1);} //line 6
+else {console.log(0);}
