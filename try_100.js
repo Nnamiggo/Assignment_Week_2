@@ -13,3 +13,13 @@ do...i.e ask the user to try again
 
 ______________________________________________________________________________
 */
+
+do {
+// var input = "Enter a number grator than 100"
+var input = 100; //assume he entered 100
+}
+While (input<=100)
+{
+	console.log ("It should be greater than 100");
+	
+}
