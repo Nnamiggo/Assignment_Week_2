@@ -4,16 +4,14 @@
 // Reffer to the prime checker function in the previous exercises but instead put the results in an array
 // Sort the array in ascending order
 
-
-const disorganize = require('./shuffler.js'); //import statemnet
-
-
-var store_primes = []; //Initialize the array to empty
+const shuffle = require('./shuffler.js'); //import statemnet
 
 //when calling the prime_number_calculator function initialise the paramater to  100
 
 const prime_number_calculator = (x,y) => 
 {
+  var store_primes = []; //Initialize the array to empty
+
   for (var i=x; i<=y; i++)
   {
     if(i>=2)
@@ -34,22 +32,26 @@ const prime_number_calculator = (x,y) =>
             store_primes.push(i);
           }
         }
-  }
+  } return store_primes;
 
 } 
 
-prime_number_calculator(7, 100);
 
-var distortedarray = disorganize(store_primes); //calling shuffle function to disorganize my array n storing it in a variable;
+var primes = prime_number_calculator(0, 100); //call the function giving it the range of numbers u want 
 
-/* Ok lets sort this array now */
+console.log("\nThis is my array of prime numbers" + "\n" +primes+"\n\n");
 
-var yo_sorted = []; //initialising an empty array that will hold my sorted values
+var distortedarray = shuffle(primes); //calling shuffle function to disorganize my array n storing it in a variable;
+
+console.log("\nThe same array is now distorted" + "\n" +distortedarray+"\n\n");
+
+
+/* ________________________Ok lets sort this array now ____________________________*/
+
 
 var sorted_array = (array_to_sort)=>
   {
-
-  var sortedArray = []; //array that will hold the sorted primes
+  var yo_sorted = []; //initialising an empty array that will hold my sorted values
 
   for (var c=0; Math.max(...array_to_sort) >= Math.max(...yo_sorted); c++){//if the max value in the array I am sorting >= to that in the sorted array, then
 
@@ -63,12 +65,10 @@ var sorted_array = (array_to_sort)=>
 
    }
 
-  return (yo_sorted); //after the loop it will return the sorted array
+  return yo_sorted; //after the loop it will return the sorted array
 
 };
 
-var get_organized_array = (array_to_sort(distortedarray));
+var get_organized_array = sorted_array(distortedarray);
 
-console.log("Finally I have an organized array!");
-
-console.log(organisedPrime);
+console.log("I have it organised again!" +"\n" +get_organized_array);
