@@ -53,6 +53,16 @@ var sorted_array = (array_to_sort)=>
 
   for (var c=0; Math.max(...array_to_sort) >= Math.max(...yo_sorted); c++){//if the max value in the array I am sorting >= to that in the sorted array, then
 
-      var my_smallest = Math.min(...array_to_sort); //Variable to hold smallest now number
+      var my_smallest = Math.min(...array_to_sort); //Variable to hold smallest now number value
 
-    
+    var my_smallest_index = array_to_sort.indexOf(my_smallest); //Get index of the above number value
+
+    yo_sorted.push(my_smallest); //Saves the smallest number at the end of yo_sorted array
+
+    array_to_sort.splice(my_smallest_index,1); //removes above element from array to sort
+
+   }
+
+  return (yo_sorted); //after the loop it will return the sorted array
+
+};
