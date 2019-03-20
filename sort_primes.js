@@ -12,21 +12,23 @@ var arr = []; //Initialize the array to empty
 
 //when calling the prime_number_calculator function initialise the paramater to  100
 
-prime_number_calculator = (x,y) => {
-  for (var i=x; i<=y; i++)
+const prime_number_calculator = (x,y) => {
+   var are_you_prime = true; //Assume the number is prime and test if this is really true
+   for (var i=x; i<=y; i++)
   {
     if(i<2) //For 2 is always the first prime number
      { 
 
-    var are_you_prime = true; //Assume the number is prime and test if this is really true
+   
 
-        for (var testing_u = 2; testing_u<=i; testing_u++) //initialise counter to 2 because 1 will always divide the number
+        for (var testing_u = 0; testing_u<=i; testing_u++) //initialise counter to 2 because 1 will always divide the number
         {
           if (i%testing_u==0 && testing_u!==i) //If the diviser is not the number
           {
             are_you_prime =false; //Then the number ceases to be prime
           }
-          
+          //var distorted = disorganize(arr);
+
         }
       }
         if (are_you_prime==true )
@@ -36,7 +38,7 @@ prime_number_calculator = (x,y) => {
           }
              } 
 }
-prime_number_calculator(0,100);
+prime_number_calculator(0, 100);
 
 //console.log(arr);
 
