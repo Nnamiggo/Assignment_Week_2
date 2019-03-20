@@ -40,16 +40,19 @@ const prime_number_calculator = (x,y) =>
 
 prime_number_calculator(7, 100);
 
-//console.log(arr);
+var distortedarray = disorganize(store_primes); //calling shuffle function to disorganize my array;
 
-//var distorted = disorganize(arr);
+/* Ok lets sort this array now */
 
-//console.log(distorted);
+var yo_sorted = []; //initialising an empty array that will hold my sorted values
 
-//var x = distorted;
+var sorted_array = (array_to_sort)=>
+  {
 
-//get an array element 
-//compare if it is smaller than all other elements
-//if it is assign it index 0
-//if not get the smallest and assign it 0
-//continue with the next item
+  var sortedArray = []; //array that will hold the sorted primes
+
+  for (var c=0; Math.max(...array_to_sort) >= Math.max(...yo_sorted); c++){//if the max value in the array I am sorting >= to that in the sorted array, then
+
+      var my_smallest = Math.min(...array_to_sort); //Variable to hold smallest now number
+
+    
