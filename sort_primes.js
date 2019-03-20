@@ -27,7 +27,7 @@ const prime_number_calculator = (x,y) =>
           {
             are_you_prime =false; //Then the number ceases to be prime
           }
-          //var distorted = disorganize(arr);
+         
         }
         if (are_you_prime==true)
           {
@@ -40,7 +40,7 @@ const prime_number_calculator = (x,y) =>
 
 prime_number_calculator(7, 100);
 
-var distortedarray = disorganize(store_primes); //calling shuffle function to disorganize my array;
+var distortedarray = disorganize(store_primes); //calling shuffle function to disorganize my array n storing it in a variable;
 
 /* Ok lets sort this array now */
 
@@ -66,3 +66,9 @@ var sorted_array = (array_to_sort)=>
   return (yo_sorted); //after the loop it will return the sorted array
 
 };
+
+var get_organized_array = (array_to_sort(distortedarray));
+
+console.log("Finally I have an organized array!");
+
+console.log(organisedPrime);
