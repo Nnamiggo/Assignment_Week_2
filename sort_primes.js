@@ -8,7 +8,7 @@
 const disorganize = require('./shuffler.js'); //import statemnet
 
 
-var arr = []; //Initialize the array to empty
+var store_primes = []; //Initialize the array to empty
 
 //when calling the prime_number_calculator function initialise the paramater to  100
 
@@ -16,6 +16,8 @@ const prime_number_calculator = (x,y) =>
 {
   for (var i=x; i<=y; i++)
   {
+    if(i>=2)
+    {
 
     var are_you_prime = true; //Assume the number is prime and test if this is really true
 
@@ -27,16 +29,16 @@ const prime_number_calculator = (x,y) =>
           }
           //var distorted = disorganize(arr);
         }
-        if (are_you_prime==true )
+        if (are_you_prime==true)
           {
-            console.log(i)
-            //arr.push(i );
+            store_primes.push(i);
           }
+        }
   }
 
 } 
 
-prime_number_calculator(0, 100);
+prime_number_calculator(7, 100);
 
 //console.log(arr);
 
